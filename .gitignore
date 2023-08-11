@@ -1,1 +1,9 @@
 .DS_Store
+
+# obsidian
+.obsidian
+.obsidian/*
+.trash
+.trash/*
+template
+template/*
