@@ -5,5 +5,8 @@
 .obsidian/*
 .trash
 .trash/*
-template
-template/*
+
+0. template
+0. template/*
+1. plugin
+1. plugin/*
