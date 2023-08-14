@@ -28,7 +28,7 @@
 - D : 지속성(Durability)
 
 ## ACID란?
-![트랜잭션 이미지](3.%20blog/DB/RDB/이론/트랜잭션(Transaction)과%20격리(Isolation)/images/0.png)
+![트랜잭션 이미지](./images/0.png)
 
 
 ### 원자성(Atomicity)
@@ -80,7 +80,7 @@ ACID에서 말하는 격리성은 동시에 실행되는 트랜잭션 간에는 
 위와 같은 이유로 RDB에서는 완화된 격리 레벨을 지원하며, 대부분 메이져 RDB는 4단계 레벨을 지원한다.
 
 ## 4단계 격리 레벨(PostgreSQL 기준으로 설명한다.)
-![격리레벨이미지](3.%20blog/DB/RDB/이론/트랜잭션(Transaction)과%20격리(Isolation)/images/2.png)
+![격리레벨이미지](./images/2.png)
 
 SQL 표준은 Transaction Isolation에 대해 4가지 레벨로 정의하고 있다. 
 
@@ -147,7 +147,7 @@ Serializable은 트랜잭션을 한 줄로 세워 차례대로 진행되는 것�
 
 ## 각 격리 레벨별로 허용하는 현상
 
-![images/1.png](3.%20blog/DB/RDB/이론/트랜잭션(Transaction)과%20격리(Isolation)/images/1.png)
+![images/1.png](./images/1.png)
 
 # 4. PostgreSQL에서 지원하는 격리 레벨 자세한 설명
 
