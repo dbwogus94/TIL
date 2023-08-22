@@ -1,9 +1,3 @@
-# 서버비 0원, 클라우드 큐 도입으로 해냈습니다!, 조현영
-
-출처: [https://www.inflearn.com/course/infcon2022/unit/126522](https://www.inflearn.com/course/infcon2022/unit/126522)
-
----
-
 # 들어가기 전에
 
 ---
@@ -120,3 +114,7 @@ API 개발을 하면서 항상 느끼지만 너무 많은 것을 코드에서 �
 AWS 같은 클라우드에서 제공하는 인프라를 활용하는 방법이 은탄환은 아니라는 것은 알고 있다.
 
 하지만 선택지에 없는 것과 알고서 고려하는 것은 다르기 때문에 이것에 대한 충분한 테스트와 학습을 통해 프로젝트에 적용해 보려한다.
+
+
+# 출처
+출처: [https://www.inflearn.com/course/infcon2022/unit/126522](https://www.inflearn.com/course/infcon2022/unit/126522)
