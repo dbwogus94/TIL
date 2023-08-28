@@ -82,7 +82,7 @@ SQL 표준은 Transaction Isolation에 대해 4가지 레벨로 정의하고 있
 - PostgreSQL은 표준을 지키기 위해 문법적으로 Read uncommitted를 지원하지만 실제 내부에 동작은 Read committed으로 동작한다.
 - 각 단계는 낮을 수록 [금지 현상](https://www.notion.so/6e03e42197f54508adcf21c50041669d?pvs=21)을 허용한다.
     - 금지 현상: 완화된 트랜잭션 격리가 유발하는 동시성 버그
-    - 종류: dirty read, nonrepeatable read, phantom read, Serialization Anomaly
+    - 종류: Dirty Read, Unrepeatable Read, Phantom Read, Serialization Anomaly
 
 ### Read uncommitted(커밋 되지 않은 읽기)
 
