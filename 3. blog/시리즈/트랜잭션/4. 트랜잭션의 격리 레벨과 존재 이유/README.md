@@ -1,9 +1,4 @@
-#개발지식 
-
-## 연결문서
-- [index-개발지식](6.%20개발지식/index-개발지식.md)
-## 정리
-### 트랜잭션과 동시성
+## 트랜잭션과 동시성
 하나의 앱에서 하나의 트랜잭션만 사용한다면 동시성에 대한 이슈는 없을 것이다.  
 아니면 여러 트랜잭션이 서로 다른 데이터만 사용한다면 동시성에 대한 이슈는 없을 것이다.  
 하지만 한명의 사용자를 위한 앱이 아닌 이상 현실적으로 그럴 수 없다.  
@@ -12,7 +7,7 @@
 트랜잭션을 지원하는 데이터베이스들은 동시성 문제를 트랜잭션 격리 레벨로 해결해 왔다.  
 격리 레벨이라고 불리는 이유는 트랜잭션시 발생할 수 있는 다양한 동시성 문제를 단계별로 해결하기 때문이다. 
 
-### 트랜잭션 격리 레벨
+## 트랜잭션 격리 레벨
 
 SQL 표준은 Transaction Isolation에 대해 4가지 레벨로 정의하고 있다.  
 (위에서 아래로 격리레벨이 높아진다.) 
@@ -30,8 +25,8 @@ SQL 표준은 Transaction Isolation에 대해 4가지 레벨로 정의하고 있
 
 
 트랜잭션 격리 레벨은 RDBMS마다 용어와 구현의 차이가 조금씩 있지만 맥락은 거의 비슷하다.  
-- Postgresql의 경우 가장 낮은 단계인 "Read uncommitted(커밋 되지 않은 읽기)"을 구현하지 않고 명칭 상으로만 지원한다.  
-- Oracle의 경우 "Serializable(직렬성)" 단계를 지원하지만 구현된 스팩은 "Repeatable read(반복 읽기)"와 같다.  
+- Postgresql의 경우 가장 낮은 단계인 "Read uncommitted"을 구현하지 않고 명칭 상으로만 지원한다.  
+- Oracle의 경우 "Serializable" 단계를 지원하지만 구현된 스팩은 "Repeatable read(반복 읽기)"와 같다.  
 
 각 단계는 낮을 수록 더 많은 동시성 이슈를 허용한다.
 - 종류: Dirty Read, Unrepeatable Read, Phantom Read, Serialization Anomaly
@@ -50,8 +45,3 @@ SQL 표준은 Transaction Isolation에 대해 4가지 레벨로 정의하고 있
 
 격리 레벨은 레벨마다 다양한 문제를 해결하고 동시에 성능적인 손실을 발생시킨다.  
 때문에 이를 사용하는 개발자는 격리 레벨이 해결하는 문제를 이해하고 도메인 맞춰 적절하게 사용하는 노력이 필요하다.  
-
-## 참고
-- [데이터 중심 애플리케이션 설계](https://www.yes24.com/Product/Goods/59566585) 7장. 트랜잭션
-
-![격리레벨이미지](https://blog.kakaocdn.net/dn/bWB3iK/btssk06AJuz/a8zGuALrRGJJmIAsOGBcK0/img.png)
