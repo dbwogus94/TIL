@@ -6,7 +6,10 @@
 .trash
 .trash/*
 
+# dir
 0. template
 0. template/*
 1. plugin
 1. plugin/*
+2. daily
+2. daily/*
