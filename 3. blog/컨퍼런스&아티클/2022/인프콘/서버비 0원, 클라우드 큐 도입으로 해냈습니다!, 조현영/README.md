@@ -27,9 +27,9 @@ JAVA Spring를 먼저 배우고 Nodejs의 express를 지나 Nestjs에 정착하�
 
 ## 1. 문제가 발생한 엑셀업로드 로직
 
-![0.png](./images/0.png)
+![0.png](images/0.png)
 
-![1.png](./images/1.png)
+![1.png](images/1.png)
 
 접수 로직에서 다량의 엑셀 업로드를 받는 경우 메모리 초과로 서버가 죽는 현상이 발생한다.
 서버가 죽는 경우 이후에 모든 로직이 블락되는 큰 장애를 야기한다.
@@ -61,7 +61,7 @@ JAVA Spring를 먼저 배우고 Nodejs의 express를 지나 Nestjs에 정착하�
 
 ## 4. **AWS SQS를 사용한 엑셀 업로드**
 
-![2.png](./images/2.png)
+![2.png](images/2.png)
 
 ![3.png](images/3.png)
 
