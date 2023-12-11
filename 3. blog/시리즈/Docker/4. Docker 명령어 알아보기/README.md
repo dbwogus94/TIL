@@ -1,6 +1,6 @@
 ## 1. 도커 명령어
 
-![docker_docs_cil](images/docker_docs_cil.png)
+	![docker_docs_cil](images/docker_docs_cil.png)
 
 - 참고: [Docker docs | commandline](https://docs.docker.com/engine/reference/commandline/cli/)   
 
